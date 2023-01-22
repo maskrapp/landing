@@ -13,7 +13,7 @@ export const Header = () => {
           <Badge colorScheme="blue">Alpha</Badge>
         </HStack>
         <Button variant="outline" colorScheme="blue" px="5">
-          Login
+          Sign in
         </Button>
       </Flex>
     </Box>
