@@ -2,6 +2,7 @@ import { Features } from "@/components/Features";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
+import { Pricing } from "@/components/Pricing";
 import { Container, Stack } from "@chakra-ui/react";
 import Head from "next/head";
 
@@ -24,6 +25,7 @@ export default function Home() {
         <Header />
         <Hero />
         <Features />
+        <Pricing />
         <Footer />
       </Stack>
     </>
