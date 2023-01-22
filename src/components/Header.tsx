@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Text } from "@chakra-ui/react";
+import { Badge, Box, Button, Flex, HStack, Text } from "@chakra-ui/react";
 
 export const Header = () => {
   return (
@@ -8,8 +8,11 @@ export const Header = () => {
         alignItems="center"
         flex="1"
       >
-        <Text fontWeight="700">Maskr</Text>
-        <Button variant="outline" px="5">
+        <HStack>
+          <Text fontWeight="700">Maskr</Text>
+          <Badge colorScheme="blue">Alpha</Badge>
+        </HStack>
+        <Button variant="outline" colorScheme="blue" px="5">
           Login
         </Button>
       </Flex>
