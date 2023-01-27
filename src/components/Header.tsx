@@ -12,7 +12,12 @@ export const Header = () => {
           <Text fontWeight="700">Maskr</Text>
           <Badge colorScheme="blue">Alpha</Badge>
         </HStack>
-        <Button variant="outline" colorScheme="blue" px="5">
+        <Button
+          variant="outline"
+          colorScheme="blue"
+          px="5"
+          onClick={() => window.location.assign("https://dash.maskr.app")}
+        >
           Sign in
         </Button>
       </Flex>
