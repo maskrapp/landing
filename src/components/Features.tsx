@@ -10,12 +10,13 @@ import {
 export const Features = () => {
   return (
     <Box id="features" p={6}>
-      <Heading textAlign={"center"} fontSize={"3xl"}>Features</Heading>
+      <Heading textAlign={"center"} fontSize={"3xl"}>
+        Features
+      </Heading>
       <Container maxW={"6xl"} mt={8}>
         <SimpleGrid
-          w="full"
-          alignItems="center"
-          columns={{ base: 1, md: 2, lg: 2 }}
+          columns={{ base: 1, md: 2 }}
+          gridAutoRows="1fr"
           spacing={10}
         >
           <Feature
@@ -40,19 +41,15 @@ export const Features = () => {
   );
 };
 
-const Feature = (
-  { title, description }: {
-    title: string;
-    description: string;
-  },
-) => {
+const Feature = ({
+  title,
+  description,
+}: {
+  title: string;
+  description: string;
+}) => {
   return (
-    <VStack
-      p="8"
-      bgColor="gray.800"
-      rounded="lg"
-      spacing="6"
-    >
+    <VStack p="8" bgColor="gray.800" rounded="lg" spacing="6">
       <Text textAlign="center" fontWeight="extrabold" fontSize="lg">
         {title}
       </Text>
